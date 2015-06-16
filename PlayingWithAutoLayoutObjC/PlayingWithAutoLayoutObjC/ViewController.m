@@ -8,26 +8,30 @@
 
 #import "ViewController.h"
 
+NSString *const kBillSuperViewHorizontal = @"H:|[_billSuperView]|";
+NSString *const kBillSuperViewVertical = @"V:|[_billSuperView]";
+
 NSString *const kBillTitleHorizontal = @"H:|-[_billTitle]";
-NSString *const kBillTitleVertical = @"V:|-[_billTitle(>=40)]";
+NSString *const kBillTitleVertical = @"V:|-(90)-[_billTitle(>=40)]";
 
 NSString *const kBillDisplayHorizontal = @"H:[_billTitle]-[_billDisplay(>=100,<=200)]-(<=50)-|";
-NSString *const kBillDisplayVertical = @"V:|-[_billDisplay(>=100)]";
+NSString *const kBillDisplayVertical = @"V:|-(90)-[_billDisplay(>=100)]";
 
 NSString *const kBillTipBorderHorizontal = @"H:|-[_billTipBorder]-|";
-NSString *const kBillTipBorderVertical = @"V:[_billDisplay]-[_billTipBorder(1)]";
+NSString *const kBillTipBorderVertical = @"V:[_billDisplay]-(10)-[_billTipBorder(1)]";
 
 NSString *const kTipTitleHorizontal = @"H:|-[_tipTitle]";
-NSString *const kTipTitleVertical = @"V:[_billTipBorder]-[_tipTitle]-|";
+NSString *const kTipTitleVertical = @"V:[_billTipBorder]-[_tipTitle]-(>=50)-|";
 
 NSString *const kTipDisplayHorizontal = @"H:[_tipTitle]-[_tipDisplay]";
-NSString *const kTipDisplayVertical = @"V:[_billTipBorder]-[_tipDisplay]-|";
+NSString *const kTipDisplayVertical = @"V:[_billTipBorder]-[_tipDisplay]-(>=50)-|";
 
 NSString *const kTipSliderHorizontal = @"H:[_tipDisplay]-[_tipSlider]-|";
-NSString *const kTipSliderVertical = @"V:[_billTipBorder]-[_tipSlider]-|";
+NSString *const kTipSliderVertical = @"V:[_billTipBorder]-[_tipSlider]-(>=50)-|";
 
 @interface ViewController ()
 
+@property (nonatomic) UIView *billSuperView;
 @property (nonatomic) UILabel *billTitle;
 @property (nonatomic) UITextField *billDisplay;
 @property (nonatomic) UIView *billTipBorder;
