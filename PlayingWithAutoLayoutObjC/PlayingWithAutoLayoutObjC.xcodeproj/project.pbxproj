@@ -14,6 +14,12 @@
 		7CD26D3A1B307297001AA38D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CD26D381B307297001AA38D /* LaunchScreen.xib */; };
 		7CD26D461B307297001AA38D /* PlayingWithAutoLayoutObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD26D451B307297001AA38D /* PlayingWithAutoLayoutObjCTests.m */; };
 		7CD26D511B307522001AA38D /* NavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD26D501B307522001AA38D /* NavController.m */; };
+		7CD26D541B31C9DB001AA38D /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD26D531B31C9DB001AA38D /* TableViewController.m */; };
+		7CD26D571B31CCC8001AA38D /* ATableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD26D561B31CCC8001AA38D /* ATableViewCell.m */; };
+		7CD26D5A1B31CCD5001AA38D /* BTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD26D591B31CCD5001AA38D /* BTableViewCell.m */; };
+		7CD26D5D1B31CCDE001AA38D /* CTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD26D5C1B31CCDE001AA38D /* CTableViewCell.m */; };
+		7CD26D601B31CCE7001AA38D /* DTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD26D5F1B31CCE7001AA38D /* DTableViewCell.m */; };
+		7CD26D631B31CCEE001AA38D /* ETableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD26D621B31CCEE001AA38D /* ETableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +47,18 @@
 		7CD26D451B307297001AA38D /* PlayingWithAutoLayoutObjCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayingWithAutoLayoutObjCTests.m; sourceTree = "<group>"; };
 		7CD26D4F1B307522001AA38D /* NavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavController.h; sourceTree = "<group>"; };
 		7CD26D501B307522001AA38D /* NavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavController.m; sourceTree = "<group>"; };
+		7CD26D521B31C9DB001AA38D /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		7CD26D531B31C9DB001AA38D /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		7CD26D551B31CCC8001AA38D /* ATableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATableViewCell.h; sourceTree = "<group>"; };
+		7CD26D561B31CCC8001AA38D /* ATableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATableViewCell.m; sourceTree = "<group>"; };
+		7CD26D581B31CCD5001AA38D /* BTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTableViewCell.h; sourceTree = "<group>"; };
+		7CD26D591B31CCD5001AA38D /* BTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTableViewCell.m; sourceTree = "<group>"; };
+		7CD26D5B1B31CCDE001AA38D /* CTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTableViewCell.h; sourceTree = "<group>"; };
+		7CD26D5C1B31CCDE001AA38D /* CTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTableViewCell.m; sourceTree = "<group>"; };
+		7CD26D5E1B31CCE7001AA38D /* DTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTableViewCell.h; sourceTree = "<group>"; };
+		7CD26D5F1B31CCE7001AA38D /* DTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTableViewCell.m; sourceTree = "<group>"; };
+		7CD26D611B31CCEE001AA38D /* ETableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETableViewCell.h; sourceTree = "<group>"; };
+		7CD26D621B31CCEE001AA38D /* ETableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +102,18 @@
 			children = (
 				7CD26D2D1B307297001AA38D /* AppDelegate.h */,
 				7CD26D2E1B307297001AA38D /* AppDelegate.m */,
+				7CD26D521B31C9DB001AA38D /* TableViewController.h */,
+				7CD26D531B31C9DB001AA38D /* TableViewController.m */,
+				7CD26D551B31CCC8001AA38D /* ATableViewCell.h */,
+				7CD26D561B31CCC8001AA38D /* ATableViewCell.m */,
+				7CD26D581B31CCD5001AA38D /* BTableViewCell.h */,
+				7CD26D591B31CCD5001AA38D /* BTableViewCell.m */,
+				7CD26D5B1B31CCDE001AA38D /* CTableViewCell.h */,
+				7CD26D5C1B31CCDE001AA38D /* CTableViewCell.m */,
+				7CD26D5E1B31CCE7001AA38D /* DTableViewCell.h */,
+				7CD26D5F1B31CCE7001AA38D /* DTableViewCell.m */,
+				7CD26D611B31CCEE001AA38D /* ETableViewCell.h */,
+				7CD26D621B31CCEE001AA38D /* ETableViewCell.m */,
 				7CD26D301B307297001AA38D /* ViewController.h */,
 				7CD26D311B307297001AA38D /* ViewController.m */,
 				7CD26D4F1B307522001AA38D /* NavController.h */,
@@ -220,10 +250,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CD26D5A1B31CCD5001AA38D /* BTableViewCell.m in Sources */,
+				7CD26D5D1B31CCDE001AA38D /* CTableViewCell.m in Sources */,
 				7CD26D321B307297001AA38D /* ViewController.m in Sources */,
 				7CD26D2F1B307297001AA38D /* AppDelegate.m in Sources */,
 				7CD26D2C1B307297001AA38D /* main.m in Sources */,
+				7CD26D601B31CCE7001AA38D /* DTableViewCell.m in Sources */,
+				7CD26D541B31C9DB001AA38D /* TableViewController.m in Sources */,
 				7CD26D511B307522001AA38D /* NavController.m in Sources */,
+				7CD26D571B31CCC8001AA38D /* ATableViewCell.m in Sources */,
+				7CD26D631B31CCEE001AA38D /* ETableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +446,7 @@
 				7CD26D4B1B307297001AA38D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7CD26D4C1B307297001AA38D /* Build configuration list for PBXNativeTarget "PlayingWithAutoLayoutObjCTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +455,7 @@
 				7CD26D4E1B307297001AA38D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
