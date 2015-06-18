@@ -1,5 +1,5 @@
 //
-//  ATableViewCell.h
+//  UIView+Autolayout.h
 //  PlayingWithAutoLayoutObjC
 //
 //  Created by Michael Vilabrera on 6/17/15.
@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ATableViewCell : UITableViewCell
+@interface UIView (Autolayout)
 
-@property (nonatomic) UILabel *billTitle;
-@property (nonatomic) UITextField *billDisplay;
++ (id)autolayoutView;
 
 @end

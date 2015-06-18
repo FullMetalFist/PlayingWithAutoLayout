@@ -7,17 +7,18 @@
 //
 
 #import "ViewController.h"
+#import "UIView+Autolayout.h"
 
 NSString *const kBillSuperViewHorizontal = @"H:|[_billSuperView]|";
 NSString *const kBillSuperViewVertical = @"V:|[_billSuperView]";
 NSString *const kTipSuperViewHorizontal = @"H:|[_tipSuperView]|";
-NSString *const kTipSuperViewVertical = @"V:|[_billSuperView][_tipSuperView]";
+NSString *const kTipSuperViewVertical = @"V:|[_billSuperView(==_tipSuperView)][_tipSuperView(==_billSuperView)]";
 NSString *const kNOPSuperViewHorizontal = @"H:|[_nopSuperView]|";
-NSString *const kNOPSuperViewVertical = @"V:[_tipSuperView][_nopSuperView]";
+NSString *const kNOPSuperViewVertical = @"V:[_tipSuperView(_nopSuperView)][_nopSuperView(==_tipSuperView)]|";
 NSString *const kEPSuperViewHorizontal = @"H:|[_epSuperView]|";
-NSString *const kEPSuperViewVertical = @"V:[_nopSuperView][_epSuperView]";
+NSString *const kEPSuperViewVertical = @"V:[_nopSuperView][_epSuperView(200)]";
 NSString *const kTotalSuperViewHorizontal = @"H:|[_totalSuperView]|";
-NSString *const kTotalSuperViewVertical = @"V:[_epSuperView][_totalSuperView]|";
+NSString *const kTotalSuperViewVertical = @"V:[_epSuperView][_totalSuperView(150)]|";
 
 //NSString *const kBillTitleHorizontal = @"H:|-[_billTitle]";
 //NSString *const kBillTitleVertical = @"V:|-(90)-[_billTitle(>=40)]";
@@ -45,6 +46,9 @@ NSString *const kTotalSuperViewVertical = @"V:[_epSuperView][_totalSuperView]|";
 @property (nonatomic) UIView *epSuperView;
 @property (nonatomic) UIView *totalSuperView;
 
+@property (nonatomic) NSDictionary *viewsDictionary;
+@property (nonatomic) NSDictionary *metricsDictionary;
+
 //@property (nonatomic) UILabel *billTitle;
 //@property (nonatomic) UITextField *billDisplay;
 //@property (nonatomic) UIView *billTipBorder;
@@ -65,21 +69,19 @@ NSString *const kTotalSuperViewVertical = @"V:[_epSuperView][_totalSuperView]|";
 }
 
 - (void)createUIComponents {
-    self.billSuperView = [[UIView alloc] init];
-    self.billSuperView.translatesAutoresizingMaskIntoConstraints = NO;
+    self.billSuperView = [UIView autolayoutView];
     self.billSuperView.backgroundColor = [UIColor lightGrayColor];
-    self.tipSuperView = [[UIView alloc] init];
-    self.tipSuperView.translatesAutoresizingMaskIntoConstraints = NO;
+    self.tipSuperView = [UIView autolayoutView];
     self.tipSuperView.backgroundColor = [UIColor whiteColor];
-    self.nopSuperView = [[UIView alloc] init];
-    self.nopSuperView.translatesAutoresizingMaskIntoConstraints = NO;
+    self.nopSuperView = [UIView autolayoutView];
     self.nopSuperView.backgroundColor = [UIColor lightGrayColor];
-    self.epSuperView = [[UIView alloc] init];
-    self.epSuperView.translatesAutoresizingMaskIntoConstraints = NO;
+    self.epSuperView = [UIView autolayoutView];
     self.epSuperView.backgroundColor = [UIColor whiteColor];
-    self.totalSuperView = [[UIView alloc] init];
-    self.totalSuperView.translatesAutoresizingMaskIntoConstraints = NO;
-    self.totalSuperView.backgroundColor = [UIColor lightGrayColor];
+//    self.totalSuperView = [[UIView alloc] init];
+//    self.totalSuperView.translatesAutoresizingMaskIntoConstraints = NO;
+//    self.totalSuperView.backgroundColor = [UIColor lightGrayColor];
+    self.viewsDictionary = NSDictionaryOfVariableBindings(_billSuperView, _tipSuperView, _nopSuperView, _epSuperView);
+    self.metricsDictionary = @{@"billSuperViewHeight":@100, @"_tipSuperViewHeight":@100};
 }
 
 - (void)addUIComponentsToView:(UIView *)view {
@@ -87,77 +89,71 @@ NSString *const kTotalSuperViewVertical = @"V:[_epSuperView][_totalSuperView]|";
     [view addSubview:self.tipSuperView];
     [view addSubview:self.nopSuperView];
     [view addSubview:self.epSuperView];
-    [view addSubview:self.totalSuperView];
+//    [view addSubview:self.totalSuperView];
 }
 
 - (NSArray *)billSuperViewContraints {
     NSMutableArray *result = [NSMutableArray array];
-    NSDictionary *viewsDictionary = NSDictionaryOfVariableBindings(_billSuperView);
-    
     [result addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:kBillSuperViewHorizontal
                                                                         options:0
                                                                         metrics:nil
-                                                                          views:viewsDictionary]];
+                                                                          views:self.viewsDictionary]];
     [result addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:kBillSuperViewVertical
                                                                         options:0
                                                                         metrics:nil
-                                                                          views:viewsDictionary]];
+                                                                          views:self.viewsDictionary]];
     return [NSArray arrayWithArray:result];
 }
 
 - (NSArray *)tipSuperViewConstraints {
     NSMutableArray *result = [NSMutableArray array];
-    NSDictionary *viewsDictionary = NSDictionaryOfVariableBindings(_billSuperView, _tipSuperView);
     [result addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:kTipSuperViewHorizontal
                                                                         options:0
                                                                         metrics:nil
-                                                                          views:viewsDictionary]];
+                                                                          views:self.viewsDictionary]];
     [result addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:kTipSuperViewVertical
                                                                         options:0
                                                                         metrics:nil
-                                                                          views:viewsDictionary]];
+                                                                          views:self.viewsDictionary]];
     return [NSArray arrayWithArray:result];
 }
 
 - (NSArray *)nopSuperViewConstraints {
     NSMutableArray *result = [NSMutableArray array];
-    NSDictionary *viewsDictionary = NSDictionaryOfVariableBindings(_tipSuperView, _nopSuperView);
     [result addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:kNOPSuperViewHorizontal
                                                                         options:0
                                                                         metrics:nil
-                                                                          views:viewsDictionary]];
+                                                                          views:self.viewsDictionary]];
     [result addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:kNOPSuperViewVertical
                                                                         options:0
                                                                         metrics:nil
-                                                                          views:viewsDictionary]];
+                                                                          views:self.viewsDictionary]];
     return [NSArray arrayWithArray:result];
 }
 
 - (NSArray *)epSuperViewConstraints {
     NSMutableArray *result = [NSMutableArray array];
-    NSDictionary *viewsDictionary = NSDictionaryOfVariableBindings(_nopSuperView, _epSuperView);
     [result addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:kEPSuperViewHorizontal
                                                                         options:0
                                                                         metrics:nil
-                                                                          views:viewsDictionary]];
+                                                                          views:self.viewsDictionary]];
     [result addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:kEPSuperViewVertical
                                                                         options:0
                                                                         metrics:nil
-                                                                          views:viewsDictionary]];
+                                                                          views:self.viewsDictionary]];
     return [NSArray arrayWithArray:result];
 }
 
 - (NSArray *)totalSuperViewConstraints {
     NSMutableArray *result = [NSMutableArray array];
-    NSDictionary *viewsDictionary = NSDictionaryOfVariableBindings(_epSuperView, _totalSuperView);
     [result addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:kTotalSuperViewHorizontal
                                                                         options:0
                                                                         metrics:nil
-                                                                          views:viewsDictionary]];
+                                                                          views:self.viewsDictionary]];
     [result addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:kTotalSuperViewVertical
                                                                         options:0
                                                                         metrics:nil
-                                                                          views:viewsDictionary]];
+                                                                          views:self.viewsDictionary]];
     return [NSArray arrayWithArray:result];
 }
 
@@ -168,7 +164,7 @@ NSString *const kTotalSuperViewVertical = @"V:[_epSuperView][_totalSuperView]|";
     [result addObjectsFromArray:[self tipSuperViewConstraints]];
     [result addObjectsFromArray:[self nopSuperViewConstraints]];
     [result addObjectsFromArray:[self epSuperViewConstraints]];
-    [result addObjectsFromArray:[self totalSuperViewConstraints]];
+//    [result addObjectsFromArray:[self totalSuperViewConstraints]];
     
     return [NSArray arrayWithArray:result];
 }
@@ -196,7 +192,7 @@ NSString *const kTotalSuperViewVertical = @"V:[_epSuperView][_totalSuperView]|";
 //    UIFont *billDisplayFont = [self.billDisplay.font fontWithSize:billDisplayFontSize];
 //    self.billDisplay.font = billDisplayFont;
 //    self.billDisplay.placeholder = @"$";
-//    
+//
 ////    self.billTipBorder = [[UIView alloc] init];
 ////    self.billTipBorder.translatesAutoresizingMaskIntoConstraints = NO;
 ////    self.billTipBorder.backgroundColor = [UIColor blackColor];

@@ -20,6 +20,7 @@
 		7CD26D5D1B31CCDE001AA38D /* CTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD26D5C1B31CCDE001AA38D /* CTableViewCell.m */; };
 		7CD26D601B31CCE7001AA38D /* DTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD26D5F1B31CCE7001AA38D /* DTableViewCell.m */; };
 		7CD26D631B31CCEE001AA38D /* ETableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD26D621B31CCEE001AA38D /* ETableViewCell.m */; };
+		7CD26D661B31FFD7001AA38D /* UIView+Autolayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD26D651B31FFD7001AA38D /* UIView+Autolayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		7CD26D5F1B31CCE7001AA38D /* DTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTableViewCell.m; sourceTree = "<group>"; };
 		7CD26D611B31CCEE001AA38D /* ETableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETableViewCell.h; sourceTree = "<group>"; };
 		7CD26D621B31CCEE001AA38D /* ETableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETableViewCell.m; sourceTree = "<group>"; };
+		7CD26D641B31FFD7001AA38D /* UIView+Autolayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Autolayout.h"; sourceTree = "<group>"; };
+		7CD26D651B31FFD7001AA38D /* UIView+Autolayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Autolayout.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,8 @@
 				7CD26D621B31CCEE001AA38D /* ETableViewCell.m */,
 				7CD26D301B307297001AA38D /* ViewController.h */,
 				7CD26D311B307297001AA38D /* ViewController.m */,
+				7CD26D641B31FFD7001AA38D /* UIView+Autolayout.h */,
+				7CD26D651B31FFD7001AA38D /* UIView+Autolayout.m */,
 				7CD26D4F1B307522001AA38D /* NavController.h */,
 				7CD26D501B307522001AA38D /* NavController.m */,
 				7CD26D361B307297001AA38D /* Images.xcassets */,
@@ -254,6 +259,7 @@
 				7CD26D5D1B31CCDE001AA38D /* CTableViewCell.m in Sources */,
 				7CD26D321B307297001AA38D /* ViewController.m in Sources */,
 				7CD26D2F1B307297001AA38D /* AppDelegate.m in Sources */,
+				7CD26D661B31FFD7001AA38D /* UIView+Autolayout.m in Sources */,
 				7CD26D2C1B307297001AA38D /* main.m in Sources */,
 				7CD26D601B31CCE7001AA38D /* DTableViewCell.m in Sources */,
 				7CD26D541B31C9DB001AA38D /* TableViewController.m in Sources */,

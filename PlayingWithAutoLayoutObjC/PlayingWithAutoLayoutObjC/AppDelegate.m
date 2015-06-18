@@ -25,10 +25,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-//    self.viewController = [[ViewController alloc] initWithNibName:nil bundle:nil];
-    self.tableViewController = [[TableViewController alloc] initWithNibName:nil bundle:nil];
-//    self.navController = [[NavController alloc] initWithRootViewController:self.viewController];
-    self.navController = [[NavController alloc] initWithRootViewController:self.tableViewController];
+    self.viewController = [[ViewController alloc] initWithNibName:nil bundle:nil];
+//    self.tableViewController = [[TableViewController alloc] initWithNibName:nil bundle:nil];
+    self.navController = [[NavController alloc] initWithRootViewController:self.viewController];
+//    self.navController = [[NavController alloc] initWithRootViewController:self.tableViewController];
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = self.navController;
     [self.window makeKeyAndVisible];
