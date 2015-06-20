@@ -8,16 +8,25 @@
 
 #import "MVEachPayCell.h"
 
+@interface MVEachPayCell()
+@property (weak, nonatomic) IBOutlet UILabel *eachPayPriceLabel;
+@end
+
 @implementation MVEachPayCell
 
-- (void)awakeFromNib {
-    // Initialization code
+- (void)prepareForReuse {
+    [super prepareForReuse];
+    self.eachPayPriceLabel.text = @"$0.00";
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
+- (void)configureWithEachPayPrice:(CGFloat)price {
+    self.eachPayPriceLabel.text = [NSString stringWithFormat:@"$%1.2f", price];
+}
 
-    // Configure the view for the selected state
+#pragma mark - Button Interaction
+
+- (IBAction)venmoButtonTapped:(id)sender {
+    NSLog(@"this happened");
 }
 
 @end

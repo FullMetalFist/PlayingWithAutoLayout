@@ -8,16 +8,15 @@
 
 #import "MVTotalCell.h"
 
+@interface MVTotalCell ()
+
+@property (weak, nonatomic) IBOutlet UILabel *totalPriceLabel;
+@end
+
 @implementation MVTotalCell
 
-- (void)awakeFromNib {
-    // Initialization code
-}
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+- (void)configureWithPrice:(CGFloat)price {
+    self.totalPriceLabel.text = [NSString stringWithFormat:@"$%1.2f", price];
 }
 
 @end

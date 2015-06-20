@@ -8,6 +8,13 @@
 
 #import "MVTipCell.h"
 
+@interface MVTipCell ()
+@property (weak, nonatomic) IBOutlet UILabel *amountLabel;
+@property (weak, nonatomic) IBOutlet UILabel *percentageLabel;
+@property (weak, nonatomic) IBOutlet UISlider *tipSlider;
+
+@end
+
 @implementation MVTipCell
 
 - (void)awakeFromNib {
@@ -18,6 +25,9 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+- (IBAction)sliderValueChanged:(id)sender {
 }
 
 @end

@@ -1,18 +1,71 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MVEachPayCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Each pay:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ext-hP-vPs">
+                        <rect key="frame" x="8" y="34" width="76" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="som-Dd-tQP" userLabel="Some Content View">
+                        <rect key="frame" x="87" y="0.0" width="233" height="89"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Hg-kF-DmO">
+                                <rect key="frame" x="96" y="8" width="40" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKH-5g-prq">
+                                <rect key="frame" x="59" y="37" width="114" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.86119214740000005" blue="0.33901871049999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Aex-WU-X0Z"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
+                                <state key="normal" title="Venmo Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="venmoButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="5CG-aW-bBk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="TKH-5g-prq" secondAttribute="centerX" constant="0.5" id="Oe2-MZ-xaO"/>
+                            <constraint firstItem="0Hg-kF-DmO" firstAttribute="top" secondItem="som-Dd-tQP" secondAttribute="top" constant="8" id="PTW-n4-Cz7"/>
+                            <constraint firstItem="TKH-5g-prq" firstAttribute="centerX" secondItem="0Hg-kF-DmO" secondAttribute="centerX" id="W2q-RT-Ch8"/>
+                            <constraint firstAttribute="centerX" secondItem="0Hg-kF-DmO" secondAttribute="centerX" constant="0.5" id="hlN-HI-g8h"/>
+                            <constraint firstAttribute="bottom" secondItem="TKH-5g-prq" secondAttribute="bottom" constant="8" id="yBT-5f-oHM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="som-Dd-tQP" firstAttribute="leading" secondItem="ext-hP-vPs" secondAttribute="trailing" constant="3" id="7aT-WT-OHQ"/>
+                    <constraint firstAttribute="trailing" secondItem="som-Dd-tQP" secondAttribute="trailing" id="B2p-sS-xyf"/>
+                    <constraint firstAttribute="bottom" secondItem="som-Dd-tQP" secondAttribute="bottom" id="Jp4-6m-9sD"/>
+                    <constraint firstItem="ext-hP-vPs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Ym0-Ug-VHR"/>
+                    <constraint firstItem="som-Dd-tQP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hVd-pT-IVo"/>
+                    <constraint firstAttribute="centerY" secondItem="ext-hP-vPs" secondAttribute="centerY" id="oKe-AQ-ycu"/>
+                </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="eachPayPriceLabel" destination="0Hg-kF-DmO" id="fVD-HJ-4TA"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>

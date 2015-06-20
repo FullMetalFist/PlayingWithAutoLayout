@@ -21,6 +21,19 @@
 		7CD26D601B31CCE7001AA38D /* DTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD26D5F1B31CCE7001AA38D /* DTableViewCell.m */; };
 		7CD26D631B31CCEE001AA38D /* ETableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD26D621B31CCEE001AA38D /* ETableViewCell.m */; };
 		7CD26D661B31FFD7001AA38D /* UIView+Autolayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD26D651B31FFD7001AA38D /* UIView+Autolayout.m */; };
+		7CD26D7E1B338E90001AA38D /* MVBillCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD26D7C1B338E90001AA38D /* MVBillCell.m */; };
+		7CD26D7F1B338E90001AA38D /* MVBillCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CD26D7D1B338E90001AA38D /* MVBillCell.xib */; };
+		7CD26D831B338E9E001AA38D /* MVTipCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD26D811B338E9E001AA38D /* MVTipCell.m */; };
+		7CD26D841B338E9E001AA38D /* MVTipCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CD26D821B338E9E001AA38D /* MVTipCell.xib */; };
+		7CD26D881B338EAD001AA38D /* MVNumberOfPeopleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD26D861B338EAD001AA38D /* MVNumberOfPeopleCell.m */; };
+		7CD26D891B338EAD001AA38D /* MVNumberOfPeopleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CD26D871B338EAD001AA38D /* MVNumberOfPeopleCell.xib */; };
+		7CD26D8D1B338EB6001AA38D /* MVEachPayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD26D8B1B338EB6001AA38D /* MVEachPayCell.m */; };
+		7CD26D8E1B338EB6001AA38D /* MVEachPayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CD26D8C1B338EB6001AA38D /* MVEachPayCell.xib */; };
+		7CD26D921B338EC2001AA38D /* MVTotalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD26D901B338EC2001AA38D /* MVTotalCell.m */; };
+		7CD26D931B338EC2001AA38D /* MVTotalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CD26D911B338EC2001AA38D /* MVTotalCell.xib */; };
+		7CD26D961B3393FD001AA38D /* MVTipCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD26D951B3393FD001AA38D /* MVTipCalculatorViewController.m */; };
+		7CD26D981B339415001AA38D /* MVTipCalculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CD26D971B339415001AA38D /* MVTipCalculatorViewController.xib */; };
+		7CD26D9B1B339529001AA38D /* UITableViewCell+MVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD26D9A1B339529001AA38D /* UITableViewCell+MVAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +75,26 @@
 		7CD26D621B31CCEE001AA38D /* ETableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETableViewCell.m; sourceTree = "<group>"; };
 		7CD26D641B31FFD7001AA38D /* UIView+Autolayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Autolayout.h"; sourceTree = "<group>"; };
 		7CD26D651B31FFD7001AA38D /* UIView+Autolayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Autolayout.m"; sourceTree = "<group>"; };
+		7CD26D7B1B338E90001AA38D /* MVBillCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVBillCell.h; sourceTree = "<group>"; };
+		7CD26D7C1B338E90001AA38D /* MVBillCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVBillCell.m; sourceTree = "<group>"; };
+		7CD26D7D1B338E90001AA38D /* MVBillCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MVBillCell.xib; sourceTree = "<group>"; };
+		7CD26D801B338E9E001AA38D /* MVTipCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVTipCell.h; sourceTree = "<group>"; };
+		7CD26D811B338E9E001AA38D /* MVTipCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVTipCell.m; sourceTree = "<group>"; };
+		7CD26D821B338E9E001AA38D /* MVTipCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MVTipCell.xib; sourceTree = "<group>"; };
+		7CD26D851B338EAD001AA38D /* MVNumberOfPeopleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVNumberOfPeopleCell.h; sourceTree = "<group>"; };
+		7CD26D861B338EAD001AA38D /* MVNumberOfPeopleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVNumberOfPeopleCell.m; sourceTree = "<group>"; };
+		7CD26D871B338EAD001AA38D /* MVNumberOfPeopleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MVNumberOfPeopleCell.xib; sourceTree = "<group>"; };
+		7CD26D8A1B338EB6001AA38D /* MVEachPayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVEachPayCell.h; sourceTree = "<group>"; };
+		7CD26D8B1B338EB6001AA38D /* MVEachPayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVEachPayCell.m; sourceTree = "<group>"; };
+		7CD26D8C1B338EB6001AA38D /* MVEachPayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MVEachPayCell.xib; sourceTree = "<group>"; };
+		7CD26D8F1B338EC2001AA38D /* MVTotalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVTotalCell.h; sourceTree = "<group>"; };
+		7CD26D901B338EC2001AA38D /* MVTotalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVTotalCell.m; sourceTree = "<group>"; };
+		7CD26D911B338EC2001AA38D /* MVTotalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MVTotalCell.xib; sourceTree = "<group>"; };
+		7CD26D941B3393FD001AA38D /* MVTipCalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVTipCalculatorViewController.h; sourceTree = "<group>"; };
+		7CD26D951B3393FD001AA38D /* MVTipCalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVTipCalculatorViewController.m; sourceTree = "<group>"; };
+		7CD26D971B339415001AA38D /* MVTipCalculatorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MVTipCalculatorViewController.xib; sourceTree = "<group>"; };
+		7CD26D991B339529001AA38D /* UITableViewCell+MVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+MVAdditions.h"; sourceTree = "<group>"; };
+		7CD26D9A1B339529001AA38D /* UITableViewCell+MVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+MVAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +140,10 @@
 				7CD26D2E1B307297001AA38D /* AppDelegate.m */,
 				7CD26D521B31C9DB001AA38D /* TableViewController.h */,
 				7CD26D531B31C9DB001AA38D /* TableViewController.m */,
+				7CD26D941B3393FD001AA38D /* MVTipCalculatorViewController.h */,
+				7CD26D951B3393FD001AA38D /* MVTipCalculatorViewController.m */,
+				7CD26D971B339415001AA38D /* MVTipCalculatorViewController.xib */,
+				7CD26D7A1B338E69001AA38D /* Custom Cells */,
 				7CD26D551B31CCC8001AA38D /* ATableViewCell.h */,
 				7CD26D561B31CCC8001AA38D /* ATableViewCell.m */,
 				7CD26D581B31CCD5001AA38D /* BTableViewCell.h */,
@@ -154,6 +191,30 @@
 				7CD26D441B307297001AA38D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7CD26D7A1B338E69001AA38D /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7CD26D7B1B338E90001AA38D /* MVBillCell.h */,
+				7CD26D7C1B338E90001AA38D /* MVBillCell.m */,
+				7CD26D7D1B338E90001AA38D /* MVBillCell.xib */,
+				7CD26D801B338E9E001AA38D /* MVTipCell.h */,
+				7CD26D811B338E9E001AA38D /* MVTipCell.m */,
+				7CD26D821B338E9E001AA38D /* MVTipCell.xib */,
+				7CD26D851B338EAD001AA38D /* MVNumberOfPeopleCell.h */,
+				7CD26D861B338EAD001AA38D /* MVNumberOfPeopleCell.m */,
+				7CD26D871B338EAD001AA38D /* MVNumberOfPeopleCell.xib */,
+				7CD26D8A1B338EB6001AA38D /* MVEachPayCell.h */,
+				7CD26D8B1B338EB6001AA38D /* MVEachPayCell.m */,
+				7CD26D8C1B338EB6001AA38D /* MVEachPayCell.xib */,
+				7CD26D8F1B338EC2001AA38D /* MVTotalCell.h */,
+				7CD26D901B338EC2001AA38D /* MVTotalCell.m */,
+				7CD26D911B338EC2001AA38D /* MVTotalCell.xib */,
+				7CD26D991B339529001AA38D /* UITableViewCell+MVAdditions.h */,
+				7CD26D9A1B339529001AA38D /* UITableViewCell+MVAdditions.m */,
+			);
+			name = "Custom Cells";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +297,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CD26D8E1B338EB6001AA38D /* MVEachPayCell.xib in Resources */,
+				7CD26D981B339415001AA38D /* MVTipCalculatorViewController.xib in Resources */,
+				7CD26D7F1B338E90001AA38D /* MVBillCell.xib in Resources */,
+				7CD26D931B338EC2001AA38D /* MVTotalCell.xib in Resources */,
 				7CD26D3A1B307297001AA38D /* LaunchScreen.xib in Resources */,
+				7CD26D891B338EAD001AA38D /* MVNumberOfPeopleCell.xib in Resources */,
+				7CD26D841B338E9E001AA38D /* MVTipCell.xib in Resources */,
 				7CD26D371B307297001AA38D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,12 +327,19 @@
 				7CD26D321B307297001AA38D /* ViewController.m in Sources */,
 				7CD26D2F1B307297001AA38D /* AppDelegate.m in Sources */,
 				7CD26D661B31FFD7001AA38D /* UIView+Autolayout.m in Sources */,
+				7CD26D961B3393FD001AA38D /* MVTipCalculatorViewController.m in Sources */,
+				7CD26D9B1B339529001AA38D /* UITableViewCell+MVAdditions.m in Sources */,
+				7CD26D7E1B338E90001AA38D /* MVBillCell.m in Sources */,
 				7CD26D2C1B307297001AA38D /* main.m in Sources */,
+				7CD26D8D1B338EB6001AA38D /* MVEachPayCell.m in Sources */,
+				7CD26D881B338EAD001AA38D /* MVNumberOfPeopleCell.m in Sources */,
 				7CD26D601B31CCE7001AA38D /* DTableViewCell.m in Sources */,
 				7CD26D541B31C9DB001AA38D /* TableViewController.m in Sources */,
 				7CD26D511B307522001AA38D /* NavController.m in Sources */,
 				7CD26D571B31CCC8001AA38D /* ATableViewCell.m in Sources */,
+				7CD26D831B338E9E001AA38D /* MVTipCell.m in Sources */,
 				7CD26D631B31CCEE001AA38D /* ETableViewCell.m in Sources */,
+				7CD26D921B338EC2001AA38D /* MVTotalCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

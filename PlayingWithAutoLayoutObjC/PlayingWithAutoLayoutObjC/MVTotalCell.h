@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UITableViewCell+MVAdditions.h"
 
 @interface MVTotalCell : UITableViewCell
-
+- (void)configureWithPrice:(CGFloat)price;
 @end

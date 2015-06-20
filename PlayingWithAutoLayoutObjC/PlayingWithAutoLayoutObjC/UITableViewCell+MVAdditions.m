@@ -10,4 +10,8 @@
 
 @implementation UITableViewCell (MVAdditions)
 
++ (NSString *)standardReuseIdentifier {
+    return NSStringFromClass(self);
+}
+
 @end

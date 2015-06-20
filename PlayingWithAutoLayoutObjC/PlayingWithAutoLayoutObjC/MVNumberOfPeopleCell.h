@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UITableViewCell+MVAdditions.h"
+
+@class MVNumberOfPeopleCell;
+@protocol MVNumberOfPeopleCellDelegate <NSObject>
+- (void)numberOfPeopleCell:(MVNumberOfPeopleCell *)cell didChangeNumberOfPeople:(NSUInteger)numberOfPeople;
+@end
 
 @interface MVNumberOfPeopleCell : UITableViewCell
-
+@property (nonatomic, weak) id <MVNumberOfPeopleCellDelegate> delegate;
 @end

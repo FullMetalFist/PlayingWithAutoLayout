@@ -8,6 +8,11 @@
 
 #import "MVNumberOfPeopleCell.h"
 
+@interface MVNumberOfPeopleCell ()
+@property (weak, nonatomic) IBOutlet UILabel *numberOfPeopleLabel;
+
+@end
+
 @implementation MVNumberOfPeopleCell
 
 - (void)awakeFromNib {
@@ -18,6 +23,16 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+#pragma mark - Button Interaction
+
+- (IBAction)upButtonTapped:(id)sender {
+    NSLog(@"This happened");
+}
+
+- (IBAction)downButtonTapped:(id)sender {
+    NSLog(@"This happened");
 }
 
 @end

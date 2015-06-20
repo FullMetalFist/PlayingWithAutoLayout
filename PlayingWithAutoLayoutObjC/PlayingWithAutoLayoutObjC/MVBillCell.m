@@ -8,6 +8,10 @@
 
 #import "MVBillCell.h"
 
+@interface MVBillCell () <UITextFieldDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *amountInputTextField;
+@end
+
 @implementation MVBillCell
 
 - (void)awakeFromNib {

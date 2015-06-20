@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface UITableViewCell (MVAdditions)
-
++ (NSString *)standardReuseIdentifier;
 @end

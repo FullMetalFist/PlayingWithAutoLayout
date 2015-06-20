@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UITableViewCell+MVAdditions.h"
+
+@class MVEachPayCell;
+@protocol MVEachPayCellDelegate <NSObject>
+- (void)eachPayCell:(MVEachPayCell *)cell didTapVenmoButton:(id)sender;
+@end
 
 @interface MVEachPayCell : UITableViewCell
-
+@property (nonatomic, weak) id <MVEachPayCellDelegate> delegate;
+- (void)configureWithEachPayPrice:(CGFloat)price;
 @end
