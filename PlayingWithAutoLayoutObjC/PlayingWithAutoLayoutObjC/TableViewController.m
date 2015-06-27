@@ -13,7 +13,16 @@
 #import "DTableViewCell.h"
 #import "ETableViewCell.h"
 
-@interface TableViewController ()
+typedef NS_ENUM(NSUInteger, TaableViewCellType) {
+    ATableViewCellType = 0,
+    BTableViewCellType,
+    CTableViewCellType,
+    DTableViewCellType,
+    ETableViewCellType,
+    CellTypeNumberOfCells
+};
+
+@interface TableViewController () <ATableViewCellDelegate>
 
 @property (nonatomic) ATableViewCell *aTVC;
 @property (nonatomic) BTableViewCell *bTVC;
@@ -105,5 +114,9 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (void)billCell:(ATableViewCell *)cell didTapDoneWithAmount:(CGFloat)amount {
+    
+}
 
 @end
